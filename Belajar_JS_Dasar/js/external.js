@@ -1,0 +1,1 @@
+document.writeln("Hello, World! from external.js");
