@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tipe data array</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// Array adalah tipe data yang digunakan untuk menyimpan sekumpulan nilai
+// Array dapat menyimpan berbagai tipe data, termasuk string, number, boolean, dan bahkan array
+
+let datakosong = [];
+let nama = ["Tegar", "Kusuma", "Teguh"]; 
+//index dimulai dari 0 , 1 , 2
+let angka = [1, 2, 3, 4, 5];
+// index dimulai dari 0 , 1 , 2 , 3 , 4
+
+// Menambahkan data ke dalam array
+const namaMahasiswa = [];
+namaMahasiswa.push("Tegar");
+namaMahasiswa.push("Kusuma", "Teguh", "Rizki");
+console.table(namaMahasiswa);
+
+// menampilkan length dalam array
+console.info(`jumlah array adalah ${namaMahasiswa.length}`); // Menampilkan jumlah data dalam array
+
+// Mengakses data dalam array
+console.info(`data pertama adalah ${namaMahasiswa[0]}`); // Mengakses data pertama
+console.info(`data kedua adalah ${namaMahasiswa[1]}`); // Mengakses data kedua
+console.info(`data ketiga adalah ${namaMahasiswa[2]}`); // Mengakses data ketiga
+console.info(`data keempat adalah ${namaMahasiswa[3]}`); // Mengakses data keempat
+
+// mengubah isi array
+namaMahasiswa[0] = "Teguh";
+console.info(`data pertama setelah diubah adalah ${namaMahasiswa[0]}`);
+console.table(namaMahasiswa);
+namaMahasiswa[2] = "Tegar";
+console.info(`data ketiga setelah diubah adalah ${namaMahasiswa[2]}`);
+console.table(namaMahasiswa);
+
+// Menghapus data dari array
+delete namaMahasiswa[1]; // Menghapus data kedua, kaya seperti di hide
+console.table(namaMahasiswa);
+
+namaMahasiswa.push("Kusumaa")
+console.table(namaMahasiswa);
+
+namaMahasiswa[1] = "Programmer";
+console.table(namaMahasiswa);
+</script>
