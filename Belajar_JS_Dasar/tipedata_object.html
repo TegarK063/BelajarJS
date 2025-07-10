@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// Object adalah tipe data yang digunakan untuk menyimpan sekumpulan nilai dalam bentuk pasangan key-value
+// Object dapat menyimpan berbagai tipe data, termasuk string, number, boolean, array, dan bahkan object lainnya
+
+const mahasiswa = {};
+//cara 1
+mahasiswa["nama"] = "Tegar Kusuma";
+//cara 2
+mahasiswa.umur = 20;
+mahasiswa.alamat = "Jl. Raya No. 1";
+mahasiswa.hobi = ["Membaca", "Menulis", "Berenang"];
+console.table(mahasiswa);
+// Mengakses data dalam object
+console.info(`Nama: ${mahasiswa.nama}`);
+
+// mengahapus data dari object
+delete mahasiswa.alamat;
+console.table(mahasiswa);
+
+// Mengubah data dalam object
+mahasiswa.umur = 21;
+console.table(mahasiswa); 
+
+// Menambahkan data baru ke dalam object
+mahasiswa.email = "tegar@gmail.com";
+console.table(mahasiswa);
+
+// Membuat object properties secara langsung
+const mahasiswa1 = {
+    "Nama Lengkap" : "Tegar Kusuma",
+    umur : 21,
+    alamat : "Jl. Raya No. 1",
+    hobi : ["Membaca", "Menulis", "Berenang"],
+};
+console.table(mahasiswa1);
+// Mengakses data dalam object 
+console.info(`Nama: ${mahasiswa1["Nama Lengkap"]}`); // Mengakses data dengan key yang memiliki spasi
+console.info(`Umur: ${mahasiswa1.umur}`); // Mengakses data dengan key yang tidak memiliki spasi
+console.info(`Alamat: ${mahasiswa1.alamat}`); // Mengakses data dengan key yang tidak memiliki spasi
+console.info(`Hobi: ${mahasiswa1.hobi[1]}`); // Mengakses data dalam array yang ada di dalam object
+</script>
