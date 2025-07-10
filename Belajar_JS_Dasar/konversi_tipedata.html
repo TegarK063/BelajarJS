@@ -31,4 +31,18 @@ const b = 1;
 const c = a.toString() + b.toString(); // Penjumlahan
 document.writeln(`<p>${c}</p>`);
 
+// NaN
+document.writeln(`<p> ${parseInt("3.3Tegar")} </p>`) // jika teks berada di belakang angka, maka akan menghasilkan Number
+document.writeln(`<p> ${parseFloat("Tegar1.1")} </p>`) // jika teks berada di depan angka, maka akan menghasilkan NaN
+
+// Operasi pada NaN
+const first = Number("Benar"); // NaN
+const second = 1; // Number
+const result = first + second; // NaN
+document.writeln(`<p>${result}</p>`); // Hasilnya NaN
+
+// melakukan pengecekan NaN
+document.writeln(`<p>${isNaN(first)}</p>`); // true, karena first adalah NaN
+document.writeln(`<p>${isNaN(second)}</p>`); // false, karena 1 adalah Number
+document.writeln(`<p>${isNaN(result)}</p>`); // true, karena result adalah NaN
 </script>
