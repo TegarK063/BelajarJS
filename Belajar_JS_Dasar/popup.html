@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Popup</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    //popup alert
+    alert("selamat belajar JavaScript");
+
+    //popup prompt
+    const nama = prompt("masukkan nama anda");
+    alert(`selamat datang ${nama}`);
+
+    //popup confirm
+    const konfirmasi = confirm("Apakah anda yakin ingin melanjutkan?");
+    if (konfirmasi) {
+        const nama = prompt("masukkan Email anda");
+        alert(`Nama Email Anda ${nama}`);
+    } else {
+        alert("Anda membatalkan");
+    }
+</script>
