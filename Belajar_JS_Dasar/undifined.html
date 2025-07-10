@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Undifined</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Belajar tipe data undefined
+    // Variabel nama belum diisi, sehingga nilainya adalah undefined
+let nama; /* itu sama dengan let nama = undefined; */
+
+if (nama === undefined) {
+    document.writeln("Variabel nama belum diisi, nilainya adalah undefined");
+} else {
+    document.writeln(`Variabel nama berisi: ${nama}`);
+}
+document.writeln("<br>");
+
+const name = ["tegar", "kusuma", "garcom"];
+// Mengakses elemen ke-3 yang tidak ada, sehingga nilainya adalah undefined
+name[1] = "Tegar Kusuma";
+if (name[3]=== undefined) {
+    document.writeln("array ke-3 tidak ada, nilainya adalah undefined");
+} else {
+    document.writeln(`array ke-3 berisi: ${name[3]}`);
+}
+document.writeln("<br>");
+
+const person = {
+    age: 21,
+    // name: "Tegar Kusuma",
+};
+// Mengakses properti yang tidak ada, sehingga nilainya adalah undefined
+if (person.name === undefined) {
+    document.writeln("Properti name tidak ada, nilainya adalah undefined");
+} else {
+    document.writeln(`Properti name berisi: ${person.name}`);
+}
+</script>
