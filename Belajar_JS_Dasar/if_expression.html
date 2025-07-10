@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>If Expression</title>
+</head>
+<body>
+</body>
+</html>
+<script>
+// If expression adalah sebuah pernyataan yang digunakan untuk mengevaluasi kondisi tertentu
+// Jika kondisi tersebut benar (true), maka blok kode di dalam if akan dieksekusi
+const nim = 10110060;
+const nilai = 90;
+
+if (nilai >= 80) {
+    document.writeln(`<p> Mahasiswa dengan nim ${nim} <span style="color:green;background: black;">lulus</span> ujian</p>`)
+} else if (nilai >= 60) {
+    document.writeln(`<p> Mahasiswa dengan nim ${nim} <span style="color:yellow; background: black;">remedial</span> ujian</p>`)
+} else {
+    document.writeln(`<p> Mahasiswa dengan nim ${nim} <span style="color:red;background: black;">tidak lulus</span> ujian</p>`)
+}
+</script>
