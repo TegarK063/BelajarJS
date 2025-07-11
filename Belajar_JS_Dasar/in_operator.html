@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<Script>
+// Operator in digunakan untuk memeriksa apakah suatu properti ada dalam objek atau tidak
+const person = {
+    nama : "Tegar Kusuma",
+    umur : 20,
+};
+
+console.log("nama" in person); // true
+console.log("alamat" in person); // false
+
+const orang = {
+    namaDepan: "Tegar",
+    namaTengah: undefined,
+    namaBelakang: "Kusuma",
+}
+if ("namaTengah" in orang) {
+    document.writeln(`Properti namaTengah ${orang.namaTengah} ada dalam objek orang`);
+} else {
+    document.writeln("Properti namaTengah tidak ada dalam objek orang");
+}
+document.writeln("<br>");
+
+// misal ga boleh undefined
+if ("namaTengah" in orang && orang.namaTengah !== undefined) {
+    document.writeln(`Properti namaTengah ${orang.namaTengah} ada dalam objek orang`);
+} else {
+    document.writeln("Properti namaTengah tidak ada dalam objek orang");
+}
+document.writeln("<br>");
+
+const nama = [null, "Kusuma", null];
+if ( 0 in nama) {
+    document.writeln(`Properti 0 ada dalam objek nama dengan nilai ${nama[0]}`);
+} else {
+    document.writeln("Properti 0 tidak ada dalam objek nama");
+}
+
+/* Kesimpulan:
+- Operator in digunakan untuk memeriksa keberadaan properti dalam objek.
+- Operator ini mengembalikan nilai boolean (true/false)
+- operator ini tidak memeriksa nilai dari properti tersebut, hanya keberadaannya.
+*/
+</Script>
