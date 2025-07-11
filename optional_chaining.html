@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optional Chaining</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Optional chaining (?.) contoh
+    // const user = {}
+    // const users = user.nama.alamat;
+    // document.writeln("Mie Sukses"); // error TypeError: Cannot read properties of undefined (reading 'alamat')
+    // document.writeln(`<p>${users}</p>`); // error TypeError: Cannot read properties of undefined (reading 'alamat')
+
+    const person = {
+        // address :{
+        //     // country : "Indognesia",
+        // }
+    };
+    let country = person?.address?.country;
+
+    document.writeln("Mie Sukses");
+    document.writeln(`<p>${country}</p>`); // jika terjadi undefined karena person.address.country tidak ada atau tidak di definisikan
+    document.writeln("Mantap");
+</script>
