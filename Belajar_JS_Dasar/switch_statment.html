@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch Satatement</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+// Switch Statement
+let day = 1;
+day = 6; // Ubah nilai variabel day untuk menguji
+switch (day) {
+    case 1 :
+        document.writeln(`Hari ${day} adalah Senin`);
+        break;
+    case 2  :
+        document.writeln(`Hari ${day} adalah Selasa`);
+        break;
+    case 3  :
+        document.writeln(`Hari ${day} adalah Rabu`);
+        break;
+    case 4 :
+        document.writeln(`Hari ${day} adalah Kamis`);
+        break;
+    case 5 :
+        document.writeln(`Hari ${day} adalah Jumat`);
+        break;
+    case 6 :
+        document.writeln(`Hari ${day} adalah Sabtu`);
+        break;
+    default :
+        document.writeln(`Hari ${day} adalah Minggu`);
+}
+document.writeln("<hr>");
+// Switch Statement dengan String
+let nilai = "A+";
+switch (nilai) {
+    case "A+" :
+    case "A" :
+        document.writeln(`Nilai Anda ${nilai}, Sangat Baik`);
+        break;
+    case "B+" :
+    case "B" :
+        document.writeln(`Nilai Anda ${nilai}, Baik`);
+        break;
+    case "C" :
+        document.writeln(`Nilai Anda ${nilai}, Cukup`);
+        break;
+    case "D" :
+        document.writeln(`Nilai Anda ${nilai}, Kurang`);
+        break;
+    default :
+        document.writeln(`Nilai Anda ${nilai}, Tidak Valid`);
+}
+</script>
