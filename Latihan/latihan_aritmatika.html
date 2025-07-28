@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan Aritmatika</title>
+</head>
+<body>
+    <script>
+        // Escape Sequence
+        document.writeln("<textarea rows='15' cols='100'>");
+        document.write("Belajar \nJavaScript Dasar \n");
+        document.writeln("homepage : \\Garcom\\Belajar_JS\\Belajar_JS_Dasar\\Ltiahan2.html");
+        document.writeln("Nama saya: \"Tegar Kusuma\"");
+        document.writeln("\tIni adalah tab");
+        document.writeln("</textarea>");
+
+        // soal opertor Aritmatika
+        let num1 = prompt("Masukkan angka pertama:");
+        let num2 = prompt("Masukkan angka kedua:");
+        // penjuamlahan
+        // let hasil = num1 + num2; // tanpa konversi tipe data, hasilnya akan menjadi string
+        // konversi tipe data ke number
+        let hasil = Number(num1) + Number(num2); // konversi string ke number
+        document.writeln(`<br>Hasil penjumlahan: ${num1} + ${num2} = ` + hasil);
+        let hasil1 = Number(num1) - Number(num2); // konversi string ke number
+        document.writeln(`<br>Hasil Pengurangan: ${num1} - ${num2} = ` + hasil1);
+        let hasil2 = Number(num1) * Number(num2); // konversi string ke number
+        document.writeln(`<br>Hasil perkalian: ${num1} * ${num2} = ` + hasil2);
+        let hasil3 = Number(num1) / Number(num2); // konversi string ke number
+        document.writeln(`<br>Hasil perkalian: ${num1} / ${num2} = ` + hasil3);
+        let hasil4 = Number(num1) % Number(num2); // konversi string ke number
+        document.writeln(`<br>Hasil perkalian: ${num1} % ${num2} = ` + hasil4);
+
+    </script>
+</body>
+</html>
