@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If Bersarang</title>
+  </head>
+  <body>
+    <script>
+      let Password = prompt('Masukkan Password Anda : ');
+
+      if (Password.length >= 8) {
+        if (Password.indexOf(' ') === -1) {
+          if (Password.includes('!') || Password.includes('*')) {
+            alert('Password Valid');
+          } else {
+            alert('Wajib ada * atau !');
+          }
+        } else {
+          alert('Password Tidak boleh spasi');
+        }
+      } else {
+        alert('Minimal 8 karakter');
+      }
+    </script>
+  </body>
+</html>
